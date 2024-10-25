@@ -4,7 +4,7 @@ from pymongo import MongoClient
 from datetime import datetime, timedelta
 
 
-def connect_to_mongo(uri="mongodb+srv://jmRubix:JupiterMeta%40jmRubix@jm-rubix.qmlx6.mongodb.net/", db_name="5GSpectrum", collection_name="spectrumData-Sim"):
+def connect_to_mongo(uri="/", db_name="5GSpectrum", collection_name="spectrumData-Sim"):
     """Establish connection to MongoDB."""
     client = MongoClient(uri)
     db = client[db_name]
